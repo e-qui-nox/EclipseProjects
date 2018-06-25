@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Driver {
+	public static void main(String []args) {
+		Scanner scan = new Scanner(System.in);
+		int phonePrice1,screenSize1;
+		double thickness1;
+		boolean isAudioJackPresent1;
+		String phoneName1,phoneBrand1;
+		phonePrice1=scan.nextInt();
+		screenSize1=scan.nextInt();
+		thickness1=scan.nextDouble();
+		isAudioJackPresent1=scan.nextBoolean();
+		phoneName1=scan.nextLine();
+		phoneBrand1=scan.nextLine();
+		scan.close();
+		AndroidPhone androidPhone = new AndroidPhone();
+		androidPhone.buildPhone(phonePrice1, screenSize1, thickness1, isAudioJackPresent1, phoneName1, phoneBrand1);
+		androidPhone.myAwesomePhone();
+	}
+}

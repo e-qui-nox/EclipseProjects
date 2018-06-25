@@ -1,0 +1,30 @@
+
+public class AndroidPhone {
+	int phonePrice,screenSize;
+	double thickness;
+	boolean isAudioJackPresent;
+	String phoneName,phoneBrand;
+	
+	public void myAwesomePhone() {
+		System.out.println(phonePrice);
+		System.out.println(screenSize);
+		System.out.println(thickness);
+		System.out.println(isAudioJackPresent);
+		System.out.println(phoneName);
+		System.out.println(phoneBrand);
+	}
+	
+	public void buildPhone(int phonePrice,int screenSize,
+						   double thickness,
+						   boolean isAudioJackPresent,
+						   String phoneName,String phoneBrand) {
+		this.phonePrice=phonePrice;
+		this.screenSize=screenSize;
+		this.thickness=thickness;
+		this.isAudioJackPresent=isAudioJackPresent;
+		this.phoneName=phoneName;
+		this.phoneBrand=phoneBrand;
+		
+	}
+	
+}
